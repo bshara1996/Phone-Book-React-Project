@@ -1,0 +1,55 @@
+.card {
+  padding: 2em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  height: 100%;
+  background: linear-gradient(
+    135deg,
+    rgba(191, 219, 254, 0.5) 0%,
+    rgba(239, 246, 255, 0.5) 100%
+  );
+  border-radius: 12px;
+  border: 1px solid rgba(147, 197, 253, 0.2);
+  overflow: hidden;
+  transition: all 0.2s ease;
+  backdrop-filter: blur(8px);
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  background: linear-gradient(
+    135deg,
+    rgba(191, 219, 254, 0.6) 0%,
+    rgba(239, 246, 255, 0.6) 100%
+  );
+  border-color: rgba(147, 197, 253, 0.4);
+  box-shadow: 0 3px 4px rgba(59, 131, 246, 0.418);
+}
+
+.iconContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 1.5rem;
+}
+
+.icon {
+  font-size: 3rem;
+  color: #0077cc; /* Blue color for icons */
+}
+
+.title {
+  font-size: 2.1rem;
+  font-weight: 500;
+  margin-bottom: 0em;
+  color: #333;
+}
+
+.description {
+  font-size: 1.3rem;
+  color: #666;
+  line-height: 1.5;
+}

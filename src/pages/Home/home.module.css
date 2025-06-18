@@ -1,0 +1,31 @@
+.welcomeSection {
+  text-align: center;
+  margin-bottom: 5rem;
+}
+
+.welcomeSection h1 {
+  color: rgb(2, 88, 150); /* Blue color for icons */
+  font-size: 2.6rem;
+}
+
+.welcomeSection p {
+  color: #64748b;
+  line-height: 1.6;
+  font-size: 1.55rem;
+}
+
+.cardsContainer {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+  width: 60%;
+  margin: 0 auto 2rem auto;
+}
+
+@media (max-width: 1024px) {
+  .cardsContainer {
+    grid-template-columns: 1fr;
+    width: 90%;
+    gap: 1.5rem;
+  }
+}

@@ -1,0 +1,27 @@
+.toggleButton {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.8rem;
+  background-color: #f3f4f6;
+  border: none;
+  border-radius: 6px;
+  color: #4b5563;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.toggleButton:hover {
+  background-color: #e5e7eb;
+  color: #1f2937;
+}
+
+.icon {
+  font-size: 1.8rem;
+}
+
+@media (max-width: 640px) {
+  .toggleButton {
+    padding: 0.6rem;
+  }
+}

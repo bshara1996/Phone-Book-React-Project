@@ -1,0 +1,30 @@
+.favoriteButton {
+  background: transparent;
+  border: none;
+  padding: 0.5rem;
+  cursor: pointer;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.2s ease;
+  color: #9ca3af;
+}
+
+.favoriteButton:hover {
+  background: #f3f4f6;
+  color: #eab308;
+  transform: scale(1.1);
+}
+
+.icon {
+  font-size: 2rem;
+}
+
+.favoriteButton.active {
+  color: #eab308;
+}
+
+.favoriteButton.active:hover {
+  color: #ca8a04;
+}

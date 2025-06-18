@@ -1,0 +1,113 @@
+.navbar {
+  margin-bottom: 2em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 0 1rem;
+}
+
+.navbar ul {
+  display: flex;
+  gap: 2.5em;
+  margin: 0;
+  padding: 0;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.navbar li {
+  display: flex;
+  align-items: center;
+}
+
+.navbar a {
+  text-decoration: none;
+  font-size: 1.7rem;
+  font-weight: 600;
+  transition: color 0.3s ease, transform 0.2s ease;
+  padding: 0.5rem;
+}
+
+.navLink {
+  color: rgb(119, 119, 119);
+}
+
+.navLink.active,
+.active {
+  color: #0077cc;
+}
+
+.navLink.active::after,
+.active::after {
+  content: "";
+  display: block;
+  margin: 0 auto;
+  margin-top: 0.2em;
+  width: 60%;
+  height: 4px;
+  border-radius: 3px;
+  background: #0077cc;
+  position: relative;
+}
+
+.navLink:hover {
+  color: #0077cc;
+  transform: translateY(-2px);
+}
+
+/* Style for logout button (last child in the navigation list) */
+.navbar li:last-child a {
+  background: transparent;
+  color: #0077cc;
+  font-size: 1.4rem;
+  border: 2px solid #0077cc;
+  border-radius: 0.5em;
+  padding: 0.4em 1.3em;
+  transition: background-color 0.3s ease, color 0.3s ease, transform 0.2s ease,
+    box-shadow 0.3s ease;
+}
+
+.navbar li:last-child a:hover {
+  background: #e0e7ff;
+  color: #0077cc;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 119, 204, 0.2);
+}
+
+@media screen and (max-width: 768px) {
+  .navbar ul {
+    gap: 1.5em;
+  }
+
+  .navbar a {
+    font-size: 1.5rem;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .navbar {
+    margin-bottom: 1.5em;
+  }
+
+  .navbar ul {
+    gap: 1rem;
+    width: 100%;
+  }
+
+  .navbar a {
+    font-size: 1.4rem;
+    padding: 0.4rem;
+  }
+
+  .navbar li:last-child {
+    width: 100%;
+    margin-top: 1rem;
+  }
+
+  .navbar li:last-child a {
+    width: 100%;
+    text-align: center;
+    display: block;
+  }
+}

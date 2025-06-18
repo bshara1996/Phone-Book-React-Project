@@ -1,0 +1,15 @@
+.footer {
+  /* border: 3px solid red; */
+  margin-top: auto; /* Push footer to bottom */
+  padding: 1.5rem 0;
+  text-align: center;
+}
+
+.footer p {
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #64748b;
+  margin: 0;
+  letter-spacing: 0.07em;
+}

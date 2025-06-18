@@ -1,0 +1,35 @@
+.addButton {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.7rem 1.2rem;
+  background-color: #0077cc;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 1.3rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  white-space: nowrap;
+}
+
+.addButton:hover {
+  background-color: #0066b3;
+  transform: translateY(-1px);
+}
+
+.addButton:active {
+  transform: translateY(0);
+}
+
+.icon {
+  font-size: 1.6rem;
+}
+
+@media (max-width: 640px) {
+  .addButton {
+    padding: 0.6rem 1rem;
+    font-size: 1.2rem;
+  }
+}

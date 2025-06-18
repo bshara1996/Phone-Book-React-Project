@@ -1,0 +1,242 @@
+.card {
+  background: linear-gradient(
+    135deg,
+    rgba(191, 219, 254, 0.5) 0%,
+    rgba(239, 246, 255, 0.5) 100%
+  );
+  border-radius: 12px;
+  border: 1px solid rgba(147, 197, 253, 0.2);
+  overflow: hidden;
+  transition: all 0.2s ease;
+  width: 100%;
+  backdrop-filter: blur(8px);
+}
+
+.card:hover {
+  transform: translateY(-4px);
+  background: linear-gradient(
+    135deg,
+    rgba(191, 219, 254, 0.6) 0%,
+    rgba(239, 246, 255, 0.6) 100%
+  );
+  border-color: rgba(147, 197, 253, 0.4);
+  box-shadow: 0 3px 4px rgba(59, 131, 246, 0.418);
+}
+
+.fullView {
+  padding: 1.5rem;
+}
+
+.compactView {
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+}
+
+.compactView .actions {
+  flex-direction: row;
+  gap: 1rem;
+  margin-left: 1rem;
+}
+
+.compactView .leftSection {
+  align-items: center;
+}
+
+.header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  margin-bottom: 1.5rem;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.imageContainer {
+  width: 100px;
+  border-radius: 50%;
+  overflow: hidden;
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+
+.imageContainer img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.info {
+  flex: 1;
+  min-width: 200px;
+}
+
+.name {
+  font-size: 1.8rem;
+  font-weight: 600;
+  color: #1f2937;
+  margin: 0;
+  word-break: break-word;
+}
+
+.contactInfo {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+  margin-top: 1.2rem;
+}
+
+.contactItem {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+  font-size: 1.4rem;
+  color: #4b5563;
+  word-break: break-all;
+}
+
+.icon {
+  font-size: 1.6rem;
+  color: #6b7280;
+  flex-shrink: 0;
+}
+
+.groups {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  margin-top: 1.2rem;
+}
+
+.group {
+  padding: 0.4rem 0.8rem;
+  font-size: 1.2rem;
+  background-color: rgba(239, 246, 255, 0.8);
+  color: #2563eb;
+  font-weight: 600;
+  border-radius: 30px;
+  border: 1px solid #60a5fa;
+}
+
+.cardContent {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  gap: 1.5rem;
+}
+
+.leftSection {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  gap: 1.5rem;
+  flex: 1;
+  min-width: 0;
+}
+
+.rightSection {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-width: 48px;
+}
+
+.actions {
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+  align-items: center;
+}
+
+.actionButton {
+  background: transparent;
+  border: none;
+  color: #6b7280;
+  font-size: 1.95rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.2s ease;
+  padding: 0.5rem;
+}
+
+.actionButton:hover {
+  color: #1f2937;
+  transform: scale(1.1);
+}
+
+.deleteButton:hover {
+  color: #dc2626;
+}
+
+.editButton:hover {
+  color: #0077cc;
+}
+
+.compactView .cardContent {
+  align-items: center;
+}
+
+.compactView .rightSection {
+  justify-content: center;
+}
+
+@media (max-width: 1100px) {
+  .fullView,
+  .compactView {
+    padding: 1rem;
+  }
+
+  .cardContent {
+    flex-direction: column;
+  }
+
+  .leftSection {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 1rem;
+  }
+
+  .info {
+    min-width: 0;
+    width: 100%;
+    text-align: center;
+  }
+
+  .actions {
+    flex-direction: row !important;
+    justify-content: center;
+    gap: 2rem;
+    margin-top: 1rem;
+    width: 100%;
+  }
+
+  .rightSection {
+    width: 100%;
+    align-items: center;
+  }
+
+  .contactItem {
+    justify-content: center;
+  }
+
+  .groups {
+    justify-content: center;
+  }
+
+  .actionButton {
+    padding-right: 0;
+    margin-top: 0.5rem;
+  }
+
+  .contactItem {
+    font-size: 1.3rem;
+  }
+}

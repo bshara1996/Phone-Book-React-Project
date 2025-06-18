@@ -1,0 +1,44 @@
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.inputGroup {
+  position: relative;
+}
+
+.label {
+  display: block;
+  font-size: 1.4rem;
+  color: #374151;
+  margin-bottom: 0.5rem;
+}
+
+.input {
+  width: 100%;
+  padding: 0.8rem;
+  font-size: 1.4rem;
+  border: 1px solid #d1d5db;
+  border-radius: 6px;
+  transition: border-color 0.2s;
+}
+
+.input:focus {
+  outline: none;
+  border-color: #0077cc;
+  box-shadow: 0 0 0 2px rgba(0, 119, 204, 0.1);
+}
+
+.buttonGroup {
+  display: flex;
+  justify-content: flex-end;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.error {
+  color: #dc2626;
+  font-size: 1.2rem;
+  margin-top: 0.5rem;
+}

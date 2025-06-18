@@ -1,0 +1,36 @@
+/* Main container for the login form and test accounts */
+.loginContainer {
+  width: min(
+    95%,
+    480px
+  ); /* Responsive width: 95% of viewport or 480px maximum */
+  margin: 4em auto auto auto; /* Center horizontally with top margin */
+  padding: 2rem; /* Internal spacing */
+  border-radius: 8px; /* Rounded corners */
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  animation: fadeIn 0.7s; /* Smooth entrance animation */
+}
+
+/* Animation definition for the login container entrance effect */
+@keyframes fadeIn {
+  from {
+    opacity: 0; /* Start fully transparent */
+    transform: translateY(24px); /* Start slightly below final position */
+  }
+  to {
+    opacity: 1; /* End fully visible */
+    transform: none; /* End at normal position */
+  }
+}
+
+/* Container for the test accounts section */
+.testAccountsContainer {
+  margin-top: 3.5rem; /* Space between login form and test accounts */
+}
+
+/* Individual test account item styling */
+.accountItem {
+  padding: 0.1rem; /* Minimal internal spacing */
+  margin-bottom: 0.5rem; /* Space between account items */
+  font-size: 1.4rem; /* Slightly smaller than main text */
+}
